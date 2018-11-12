@@ -1,0 +1,120 @@
+<head>
+  <title> Survey Form </title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-builder">
+    </div>
+    <div class="nav-builder">
+    </div>
+    <div class="nav-builder">
+    </div>
+  </nav>
+  <header>
+    <h1 id="title">Survey</h1>
+  </header>
+  <section class="wrapper">
+    <p id="description">Please let us know your thoughts<p>
+    <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label for="name" id="name-label">* Name:</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" type="text" name="name" placeholder="Enter your name" id="name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="email" id="email-label">* Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+     </div>
+     <div class="rowTab">
+       <div class="labels">
+        <label for="age" id="number-label">* Age:</label>
+       </div>
+       <div class="rightTab">
+        <input id="number" type="number" class="input-field" required placeholder="Age" min="0" max="100">
+       </div>
+     <div class="rowTab">
+       <div class="labels">
+        <label for="role">Which option best describes your current role?</label>
+       </div>
+       <div class="rightTab">
+          <select id="dropdown">
+          <option disable selected value>Select</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+          </select>
+       </div>
+     </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label>* How likely is it that you would recommend us to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style-type: none">
+          <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely" name="recommend" value="1" class="recommend">             </label></li>
+          <li class="radio"><label>Maybe<input type="radio" id="recommend-maybe" name="recommend" value="2" class="recommend"></label>               </li>
+          <li class="radio"><label>Not Sure<input type="radio" id="recommend-not-sure" name="recommend" value="3" class="recommend">                 </label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label>Which option do you like the best?</label>
+      </div>
+      <div class="rightTab">
+        <select class="dropdown">
+        <option disable selected value>Select</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+        </select>
+      </div>
+   </div>
+   <div class="rowTab">
+     <div class="labels">
+       <label>Things that should be improved in the future (Check all that apply):</label>
+     </div>
+     <div class="rightTab">
+       <ul>
+        <li class="checkbox"><label><input type="checkbox" id="coding" name="interest" value="1">
+        Coding</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="music" name="interest" value="2">
+        Music</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="gaming" name="interest" value="3">
+        Gaming</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="astronomy" name="interest" value="4">
+        Astronomy</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="animals" name="interest" value="5">
+        Animals</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="hockey" name="interest" value="6">
+        Hockey</label>
+        <li class="checkbox"><label><input type="checkbox" id="nature" name="interest" value="7">
+        Nature</label>
+        <li class="checkbox"><label><input type="checkbox" id="weekends" name="interest" value="8">
+        Weekends</label>
+       </ul>
+     </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label>Any Comments or Suggestions?</label>
+    </div>
+    <div class="rightTab">
+      <textarea rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+    </div>
+  </div>
+  <input class="button-submit" type="submit" value="Submit" id="submit">
+  </form>
+  </section>
+
+</body>
