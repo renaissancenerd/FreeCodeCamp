@@ -1,0 +1,789 @@
+body {
+  margin: 0;
+  background-image: url("https://image.ibb.co/nsq2sp/cork_wallet.png");
+}
+/*header*/
+@media all and (min-width: 1px) {
+  #header {
+    box-shadow: inset 00px -2px 0px 0px #dba827;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+  }
+}
+@media all and (min-width: 1px) {
+  #header {
+    box-shadow: inset 00px -2px 0px 0px #dba827;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+  }
+}
+/*header media queries*/
+@media all and (max-width: 749px) {
+  #head_contain {
+    height: 45px;
+    width: 100%;
+  }
+  #head_menu {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header-img {
+    height: 45px;
+    width: auto;
+  }
+  #nav-bar {
+    font-size: 10px;
+    font-family: "Slabo 27px", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media (max-width: 1399px) and (min-width: 750px) {
+  #head_contain {
+    height: 50px;
+    width: 100%;
+  }
+  #head_menu {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header-img {
+    height: 50px;
+    width: auto;
+  }
+  #nav-bar {
+    font-size: 18px;
+    font-family: "Slabo 27px", serif;
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+  }
+}
+@media all and (min-width: 1400px) {
+  #head_contain {
+    height: 85px;
+    width: 100%;
+    z-index: 2;
+  }
+  #head_menu {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  #header-img {
+    height: 90px;
+    width: auto;
+    margin-right: 1vw;
+    margin-left: -1vw;
+    z-index: 2;
+  }
+  #nav-bar {
+    position: relative;
+    font-size: 28px;
+    font-family: "Slabo 27px", serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+  }
+}
+/*welcome page / video for large screens */
+#welcome {
+  position: relative;
+  padding-bottom: 56.25%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+@media all and (min-width: 1400px) {
+  #welcomesmall {
+    display: none !important;
+  }
+}
+/*welcome page / images for phone */
+@media all and (max-width: 749px) {
+  iframe {
+    display: none;
+  }
+  #welcome {
+    display: none;
+  }
+}
+#welcomesmall {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#welcomesmall > img {
+  height: 80vh;
+  width: auto;
+  padding-top: 15px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+/* welcome page for tablet */
+@media (max-width: 1399px) and (min-width: 750px) {
+  #welcomesmall {
+    display: none;
+  }
+  #welcome {
+    position: relative;
+    padding-bottom: 56.25%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+.titles {
+  color: #3a77b5;
+  font-size: 28px;
+  font-family: "Slabo 27px", serif;
+}
+/* our history intro */
+/* our history intro - large screen */
+@media all and (min-width: 1400px) {
+  .intros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #dba827;
+    border-width: 1.5px;
+  }
+}
+/* our history intro - tablet */
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  .intros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vw;
+    background-color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #dba827;
+    border-width: 1.5px;
+  }
+}
+/* our history intro - phone */
+@media all and (max-width: 749px) {
+  .intros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vw;
+    background-color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #dba827;
+    border-width: 1.5px;
+  }
+}
+/* our history main */
+/* our history main - large*/
+@media all and (min-width: 1400px) {
+  #our_history {
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/iDxEV9/historybackmedlrg_2.jpg");
+    background-size: cover;
+  }
+  #our_history_layer {
+    background-color: rgba(225, 225, 225, 0.6);
+    display: grid;
+    justify-items: start;
+    height: 100%;
+  }
+  .historyh1 {
+    padding-left: 180px;
+    padding-top: 80px;
+    margin-bottom: -50px;
+    font-size: 60px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .historyp {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 30px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+}
+/* our history main - tablet*/
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  #our_history {
+    width: 100vw;
+    height: 300px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/dZ7USz/historybackmedmed.jpg");
+    background-size: cover;
+  }
+  #our_history_layer {
+    background-color: rgba(225, 225, 225, 0.6);
+    display: grid;
+    justify-items: start;
+    height: 100%;
+  }
+  .historyh1 {
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .historyp {
+    font-size: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+}
+/* our history main - phone*/
+@media all and (max-width: 749px) {
+  #our_history {
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh;
+    background-image: url("https://image.ibb.co/c3OA3U/historybacksmall_2.jpg");
+    background-size: cover;
+  }
+  #our_history_layer {
+    background-color: rgba(225, 225, 225, 0.6);
+    display: grid;
+    justify-items: start;
+    height: 100%;
+  }
+  .historyh1 {
+    padding-top: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .historyp {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+}
+/* our products */
+/* original main - large */
+@media all and (min-width: 1400px) {
+  #O_P_Original {
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/mWyqep/whisky_barrels_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #origtext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #orighead {
+    font-size: 60px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origpara {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origbottle {
+    height: 500px;
+    padding-right: 15vw;
+  }
+}
+/* original main - tablet*/
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  #O_P_Original {
+    width: 100vw;
+    height: 350px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/mWyqep/whisky_barrels_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #origtext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #orighead {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origpara {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origbottle {
+    height: 350px;
+    padding-right: 15vw;
+  }
+}
+/* original main - phone*/
+@media all and (max-width: 749px) {
+  #O_P_Original {
+    width: 100vw;
+    height: 275px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/jfW79p/whisky_barrelssmall.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #origtext {
+    padding-left: 3vw;
+  }
+  #orighead {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origpara {
+    font-size: 15px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #origbottle {
+    height: 250px;
+    float: right;
+  }
+}
+/* honey main - large */
+@media all and (min-width: 1400px) {
+  #O_P_Honey {
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/endUc9/honey.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #honeytext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #honeyhead {
+    font-size: 60px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeypara {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeybottle {
+    height: 500px;
+    padding-right: 15vw;
+  }
+}
+/* honey main - tablet*/
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  #O_P_Honey {
+    width: 100vw;
+    height: 350px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/endUc9/honey.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #honeytext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #honeyhead {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeypara {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeybottle {
+    height: 350px;
+    padding-right: 15vw;
+  }
+}
+/* honey main - phone*/
+@media all and (max-width: 749px) {
+  #O_P_Honey {
+    width: 100vw;
+    height: 275px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/bNrbPp/honeysmall.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #honeytext {
+    padding-left: 3vw;
+  }
+  #honeyhead {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeypara {
+    font-size: 15px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #honeybottle {
+    height: 250px;
+    float: right;
+  }
+}
+/* double main - large */
+@media all and (min-width: 1400px) {
+  #doubleoak {
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/egtXx9/barbackdrop_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #doubletext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #doublehead {
+    font-size: 60px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublepara {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublebottle {
+    height: 480px;
+    padding-right: 15vw;
+  }
+}
+/* double main - tablet*/
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  #doubleoak {
+    width: 100vw;
+    height: 350px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/egtXx9/barbackdrop_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #doubletext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #doublehead {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublepara {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublebottle {
+    height: 330px;
+    padding-right: 15vw;
+  }
+}
+/* double main - phone*/
+@media all and (max-width: 749px) {
+  #doubleoak {
+    width: 100vw;
+    height: 275px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/cxyt4p/barbackdropsmall.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #doubletext {
+    padding-left: 3vw;
+  }
+  #doublehead {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublepara {
+    font-size: 15px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #doublebottle {
+    height: 250px;
+    float: right;
+    padding-top: 10px;
+  }
+}
+/* apple main - large */
+@media all and (min-width: 1400px) {
+  #apple {
+    width: 100vw;
+    height: 500px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/g2rSx9/apples_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #appletext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #applehead {
+    font-size: 60px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applepara {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applebottle {
+    height: 480px;
+    padding-right: 13vw;
+  }
+}
+/* apple main - tablet*/
+@media all and (max-width: 1399px) and (min-width: 750px) {
+  #apple {
+    width: 100vw;
+    height: 350px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/g2rSx9/apples_2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #appletext {
+    width: 55vw;
+    padding-left: 15vw;
+  }
+  #applehead {
+    font-size: 30px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applepara {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applebottle {
+    height: 330px;
+    padding-right: 15vw;
+  }
+}
+/* apple main - phone*/
+@media all and (max-width: 749px) {
+  #apple {
+    width: 100vw;
+    height: 275px;
+    max-width: 100%;
+    background-image: url("https://image.ibb.co/iGdjzp/applesmob.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #appletext {
+    padding-left: 3vw;
+  }
+  #applehead {
+    font-size: 20px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applepara {
+    font-size: 15px;
+    color: white;
+    font-family: "Slabo 27px", serif;
+  }
+  #applebottle {
+    height: 220px;
+    float: right;
+    padding-top: 10px;
+  }
+}
+/*contact us - large*/
+@media all and (min-width: 1400px) {
+  #contact_us {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_left_column {
+    padding-right: 150px;
+  }
+  .contact_right_column {
+    padding-left: 150px;
+  }
+  .contaxtp1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .mailing_list {
+    padding-bottom: 15px;
+  }
+  #follow_us_container {
+    display: flex;
+    justify-content: center;
+  }
+  .social_media_container {
+    display: flex;
+    justify-content: center;
+  }
+  #s_m_iconsl {
+    padding-right: 40px;
+  }
+  #s_m_iconsm {
+    padding-right: 40px;
+  }
+}
+/*contact us - tablet*/
+@media all and (max-width: 1400px) and (min-width: 750px) {
+  #contact_us {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_left_column {
+    padding-right: 50px;
+  }
+  .contact_right_column {
+    padding-left: 50px;
+  }
+  .contaxtp1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .mailing_list {
+    padding-bottom: 15px;
+  }
+  #follow_us_container {
+    display: flex;
+    justify-content: center;
+  }
+  .social_media_container {
+    display: flex;
+    justify-content: center;
+  }
+  #s_m_iconsl {
+    padding-right: 40px;
+  }
+  #s_m_iconsm {
+    padding-right: 40px;
+  }
+}
+/*contact us - phone*/
+@media all and (max-width: 749px) {
+  #contact_us {
+    height: 350px;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 22px;
+  }
+  .contaxtp1 {
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    font-family: "Slabo 27px", serif;
+  }
+  .mailing_list {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  #follow_us_container {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .social_media_container {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  #s_m_iconsl {
+    padding-right: 40px;
+  }
+  #s_m_iconsm {
+    padding-right: 40px;
+  }
+}
